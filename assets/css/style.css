@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: "Jost", sans-serif;
+}
+
+html {
+  font-size: 90.6%;
+}
+
+:root {
+  --theam-color:#1a4dbe;
+  --light-theam-color:#2c3655;
+  --secondary-color:#055c2d;
+  --white:#ffffff;
+  --black:#000000;
+  --dark-white:#dbdbdb;
+  --light-blue: #b0baf1;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  text-decoration: none;
+}
+
+/* ============== navbar start ============ */
+.header-section {
+  width: 100%;
+}
+.header-section .navbar {
+  padding: 30px 15px;
+  background-color: var(--white);
+}
+.header-section .navbar .menu-bar-section li {
+  padding: 5px 10px;
+}
+.header-section .navbar .menu-bar-section li a {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.header-section .navbar .menu-bar-section li a:hover {
+  color: var(--theam-color);
+}
+
+/* ============== navbar End ============ */
+/* =============== banner section start =============== */
+.Loan-banner-section {
+  max-height: 100vh;
+}
+.Loan-banner-section .banner-img-section .swiper {
+  width: 100%;
+  height: 100%;
+}
+.Loan-banner-section .banner-img-section .swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Loan-banner-section .banner-img-section .swiper-slide .img-box-1 {
+  background-image: url(../img/img-1.webp.crdownload);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.Loan-banner-section .banner-img-section .swiper-slide .img-box-2 {
+  background-image: url(../img/img-2.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.Loan-banner-section .banner-img-section .swiper-slide .contain-body {
+  padding: 9rem 20px;
+}
+
+/* =============== banner section End =============== */
+/* ============ why-choose-section start ============= */
+.why-choose-section {
+  margin: 50px 0;
+}
+.why-choose-section .why-choose-contain .icon-box {
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid var(--theam-color);
+}
+
+/* ============ why-choose-section End ============= */
+/* ============= Testimonials-section start ===========*/
+.Testimonials-section {
+  margin: 50px 0;
+}
+.Testimonials-section .swiper {
+  width: 100%;
+  height: 100%;
+}
+.Testimonials-section .swiper-wrapper {
+  margin: 10px 0;
+}
+.Testimonials-section .swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+.Testimonials-section .swiper-slide .card {
+  background: #fff;
+  box-shadow: 0 8px 30px -7px #c9dff0;
+  margin: 0 20px;
+  padding: 0 10px;
+  border-radius: 20px;
+  border: 0;
+}
+.Testimonials-section .swiper-slide .card .img-box {
+  height: 120px;
+  width: 120px;
+  margin-inline: auto;
+  margin: 15px auto 0;
+}
+.Testimonials-section .swiper-slide .card .card-img-top {
+  border-radius: 50%;
+  max-width: 100%;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-shadow: 0 8px 20px -4px #95abbb;
+}
+.Testimonials-section .swiper-slide .card .card-body {
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1.25rem;
+}
+.Testimonials-section .swiper-slide .card .card-body p {
+  padding-bottom: 15px;
+}
+
+/* ============= Testimonials-section End ===========*/
+@media (min-width: 1500px) {
+  .container,
+  .container-fluid,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1500px !important;
+  }
+}
+@media (min-width: 1400px) {
+  .container,
+  .container-fluid,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1400px !important;
+  }
+}/*# sourceMappingURL=style.css.map */
