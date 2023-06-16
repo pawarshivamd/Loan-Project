@@ -24,7 +24,7 @@
   <div class="container-fluid p-0">
 
 
-    <header class="container-fluid header-section p-0">
+    <header id="navbar" class="container-fluid header-section p-0 navbar-scroll">
 
       <nav class="navbar navbar-expand-lg  ">
         <div class="container">
@@ -404,7 +404,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <h1 class="modal-title fs-5" id="loginModalLabel">Login</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div  class="btn-close" data-bs-dismiss="modal" aria-label="Close"></div>
           </div>
           <div class="modal-body">
             <form>
@@ -439,6 +439,15 @@
     crossorigin="anonymous"></script>
 
   <script>
+    window.addEventListener('scroll', function() {
+  var navbar = document.getElementById('navbar');
+
+  if (window.pageYOffset > 30) {
+    navbar.classList.add('navbar-scroll');
+  } else {
+    navbar.classList.remove('navbar-scroll');
+  }
+});
     var swiper = new Swiper(".mySwiper", {
       spaceBetween: 30,
       centeredSlides: true,

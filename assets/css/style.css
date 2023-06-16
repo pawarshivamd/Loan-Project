@@ -69,6 +69,10 @@ button {
 /* ============== navbar start ============ */
 .header-section {
   width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  transition: all 0.3s;
 }
 .header-section .navbar {
   box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
@@ -87,6 +91,10 @@ button {
 }
 .header-section .navbar .menu-bar-section li a:hover {
   color: var(--theam-color);
+}
+
+.navbar-scroll {
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.3);
 }
 
 /* ============== navbar End ============ */

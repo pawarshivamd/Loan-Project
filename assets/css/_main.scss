@@ -1,7 +1,10 @@
 /* ============== navbar start ============ */
 .header-section {
     width: 100%;
-
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    transition: all .3s;
     .navbar {
         //  border: 1px solid red;
         box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
@@ -27,7 +30,9 @@
             }
         }
     }
-
+}
+.navbar-scroll{
+    box-shadow: 0 3px 10px 0 rgba(0,0,0,.3);
 }
 
 /* ============== navbar End ============ */
