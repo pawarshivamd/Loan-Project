@@ -37,19 +37,19 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 menu-bar-section">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">About us</a>
+                <a class="nav-link active" aria-current="page" href="about us.html">About us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"> Services</a>
+                <a class="nav-link active" aria-current="page" href="services.html"> Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Loan Application</a>
+                <a class="nav-link active" aria-current="page" href="Loan Application.html">Loan Application</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"> contact us</a>
+                <a class="nav-link active" aria-current="page" href="contact us.html"> Contact us</a>
               </li>
               <li class="nav-item " data-bs-toggle="modal" data-bs-target="#loginModal" data-bs-whatever="@mdo">
                 <a class="nav-link active" aria-current="page" href="#">Login</a>
@@ -292,27 +292,27 @@
     <div class="col-lg-4 col-md-6 col-sm-12">
       <div class="counter-boday">
         <div class="counter-number-section">
-          <h3 class="text-center">54</h3>
+          <h3 class="text-center">94</h3>
         </div>
-        <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia nulla deserunt nihil.</p>
+        <h5 class="text-center">Loan Application Processed</h5>
 
       </div>
     </div>
     <div class="col-lg-4 col-md-6 col-sm-12">
       <div class="counter-boday">
         <div class="counter-number-section">
-          <h3>54</h3>
+          <h3>106</h3>
         </div>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia nulla deserunt nihil.</p>
+        <h5 class="text-center">Customer Served</h5>
 
       </div>
     </div>
     <div class="col-lg-4 col-md-6 col-sm-12">
       <div class="counter-boday">
         <div class="counter-number-section">
-          <h3>54</h3>
+          <h3>130</h3>
         </div>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia nulla deserunt nihil.</p>
+        <h5 class="text-center">Total Inquiries</h5>
 
       </div>
     </div>
@@ -326,7 +326,7 @@
         <div class="footer-area footer-padding">
           <div class="container">
             <div class="row justify-content-between">
-              <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
+              <div class=" col-lg-4 col-md-6 col-sm-8">
                 <div class="single-footer-caption ">
 
                   <div class="footer-logo">
@@ -336,20 +336,21 @@
                     exercise cost.</p>
                 </div>
               </div>
-              <div class="offset-xl-1 col-xl-2 col-lg-2 col-md-4 col-sm-6">
+              <div class="offset-lg-2 col-lg-2 col-md-4 col-sm-6">
                 <div class="single-footer-caption">
                   <div class="footer-tittle">
                     <h4>Quick Links</h4>
                     <ul>
-                      <li><a href="#">Work</a></li>
-                      <li><a href="#">Services</a></li>
-                      <li><a href="#">Products</a></li>
-                      <li><a href="#">Tips &amp; Tricks</a></li>
+                      <li><a href="about us.html">About us
+                      </a></li>
+                      <li><a href="services.html">Services</a></li>
+                      <li><a href="Loan Application.html">Loan Application</a></li>
+                      <li><a href="contact us.html">Contact us</a></li>
                     </ul>
                   </div>
                 </div>
               </div>
-              <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6">
+              <!-- <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6">
                 <div class="single-footer-caption mb-50">
                   <div class="footer-tittle">
                     <h4>Solution</h4>
@@ -360,8 +361,8 @@
                     </ul>
                   </div>
                 </div>
-              </div>
-              <div class="col-xl-4 col-lg-6 col-md-8 col-sm-10">
+              </div> -->
+              <div class=" col-lg-4 col-md-8 col-sm-10">
                 <div class="single-footer-caption mb-50">
                   <div class="footer-tittle mb-5">
                     <h4>Newsletter</h4>
@@ -418,10 +419,17 @@
               </div>
             </form>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="" data-bs-dismiss="modal">Close</button>
-            <button type="button" onclick="redirectToLoanDashboard()" class="" data-bs-dismiss="modal">Submit</button>
+          <div class="">
+            <hr>
+            <div class="d-flex justify-content-center">
+              <button type="button" onclick="redirectToLoanDashboard()" class="" data-bs-dismiss="modal">Login</button>
 
+            </div>
+            <!-- <button type="button" class="" data-bs-dismiss="modal">Close</button> -->
+            <div class="mt-2">
+
+              <p class="text-center"><a href="#" class="text-dark"> forgot password</a></p>
+            </div>
             
           </div>
         </div>
@@ -438,60 +446,9 @@
     integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
     crossorigin="anonymous"></script>
 
-  <script>
-    window.addEventListener('scroll', function() {
-  var navbar = document.getElementById('navbar');
+  <script src="assets/js/script.js"></script>
+   
 
-  if (window.pageYOffset > 30) {
-    navbar.classList.add('navbar-scroll');
-  } else {
-    navbar.classList.remove('navbar-scroll');
-  }
-});
-    var swiper = new Swiper(".mySwiper", {
-      spaceBetween: 30,
-      centeredSlides: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-    var swiper = new Swiper(".mySwiper-2", {
-
-      spaceBetween: 30,
-      freeMode: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      breakpoints: {
-    420: {
-      slidesPerView: 1,
-    },
-    640: {
-      slidesPerView: 2,
-    },
-    768: {
-      slidesPerView: 2,
-    },
-    1200: {
-      slidesPerView: 3,
-    },
-  },
-    });
-
-    function redirectToLoanDashboard() {
-  window.location.href = "https://loan-dashboard.netlify.app";
-}
-  </script>
 </body>
 
 </html>
