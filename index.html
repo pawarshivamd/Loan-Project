@@ -51,7 +51,7 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#"> contact us</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item " data-bs-toggle="modal" data-bs-target="#loginModal" data-bs-whatever="@mdo">
                 <a class="nav-link active" aria-current="page" href="#">Login</a>
               </li>
             </ul>
@@ -118,7 +118,7 @@
 
     <div class="why-choose-section">
       <div class="container">
-        <div class="text-center mb-2">
+        <div class="text-center mb-5">
           <h1>Why choose Us</h1>
         </div>
         <div class="row align-items-center">
@@ -180,8 +180,8 @@
 
     <div class="Testimonials-section">
       <div class="container">
-        <div class="head-section text-center  ">
-          <h1>Testimonials</h1>
+        <div class="head-section text-center my-5 ">
+          <h1 class="my-3">Testimonials</h1>
           <p class="col-lg-8 col-md-9 col-sm-11 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quaerat debitis nemo, voluptate incidunt beatae quo non repudiandae perferendis cumque enim commodi voluptates odio veritatis tenetur optio voluptatem laudantium nobis?</p>
         </div>
         <div class="swiper mySwiper-2">
@@ -258,10 +258,67 @@
                 </div>
               </div>
             </div>
+            <!-- 5 -->
+            <div class="swiper-slide">
+              <div class="card text-center">
+                 <div class="img-box">
+                  <img class="card-img-top"
+                   src="assets/img/Testimonials.jpg"
+                   alt="">
+
+                </div>
+                <div class="card-body">
+                  <h5>Ronne Galle <br>
+                    <span> Project Manager </span>
+                  </h5>
+                  <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+                    impedit quo minus id quod maxime placeat ” </p>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="swiper-pagination"></div>
         </div>
       </div>
+    </div>
+
+    <div class="loan-counter-section"> 
+<div class="container">
+  <div class="head-section text-center my-5 ">
+    <h1 class="my-3">Total Counters</h1>
+    <p class="col-lg-8 col-md-9 col-sm-11 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quaerat debitis nemo, voluptate incidunt beatae quo non repudiandae perferendis cumque enim commodi voluptates odio veritatis tenetur optio voluptatem laudantium nobis?</p>
+  </div>
+  <div class="row"> 
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="counter-boday">
+        <div class="counter-number-section">
+          <h3 class="text-center">54</h3>
+        </div>
+        <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia nulla deserunt nihil.</p>
+
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="counter-boday">
+        <div class="counter-number-section">
+          <h3>54</h3>
+        </div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia nulla deserunt nihil.</p>
+
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="counter-boday">
+        <div class="counter-number-section">
+          <h3>54</h3>
+        </div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia nulla deserunt nihil.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
     </div>
 
     <footer>
@@ -337,6 +394,39 @@
       </div>
     </footer>
 
+
+
+
+
+
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="loginModalLabel">Login</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Email</label>
+                <input type="email" class="w-100" id="recipient-name">
+              </div>
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label">Password:</label>
+                <input type="password" class="w-100" id="message-text">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="" data-bs-dismiss="modal">Close</button>
+            <button type="button" onclick="redirectToLoanDashboard()" class="" data-bs-dismiss="modal">Submit</button>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
@@ -388,6 +478,10 @@
     },
   },
     });
+
+    function redirectToLoanDashboard() {
+  window.location.href = "https://loan-dashboard.netlify.app";
+}
   </script>
 </body>
 

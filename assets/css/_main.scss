@@ -47,7 +47,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            // height: 80vh;
+            height: 90vh;
 
             .img-box-1 {
                 background-image: url(../img/slider-1.jpg);
@@ -156,6 +156,28 @@
 }
 
 /* ============= Testimonials-section End ===========*/
+/* =========== loan-counter-section start =============== */
+.loan-counter-section{
+    margin: 50px 0;
+    .counter-boday{
+        padding: 20px;
+        box-shadow: 0 8px 30px -7px #c9dff0;
+        height: 200px;
+        .counter-number-section{
+            margin: 20px 0;
+            h3{
+                text-align: center;
+            }
+        }
+        p{
+            text-align: center;
+            width: min(100% - 20px , 80%);
+            margin-inline: auto;
+        }
+    }
+}
+/* =========== loan-counter-section End =============== */
+    
 /* =========== footer setion start ============*/
 .footer-wrapper {
     padding: 30px 10px;
@@ -186,7 +208,9 @@
                         position: relative;
                         display: flex;
                         align-items: center;
-
+                        &:hover{
+                            color: var(--theam-color);
+                        }
                     }
                 }
             }
@@ -206,6 +230,7 @@
                     margin-bottom: 20px;
                     width: 170px;
                     padding: 10px 30px !important;
+                    transition: all .3s;
                     &:hover{
                         background-color: transparent;
                         color: var(--black);
@@ -216,15 +241,25 @@
         .footer-social{
             margin-top: 40px;
             a{
-                border: 1px solid var(--theam-color);
+                // border: 1px solid var(--theam-color);
                 padding: 10px;
                 border-radius: 5px;
                 margin-inline:5px ;
                 width: 50px;
                 height: 50px;
                 color: var(--black);
+                transition: all .3s;
+
+                // box-shadow: 0 20px 20px rgba(26,77,190,.2);
+                box-shadow: rgba(26,77,190, 0.2) 0px 2px 8px 0px;
                 i{
                     font-size: 17px;
+                }
+                &:hover{
+                    background-color: var(--theam-color);
+                    i{
+                        color: var(--white);
+                    }
                 }
             }
         }
