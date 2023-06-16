@@ -39,8 +39,33 @@ ul {
 }
 
 li {
-  text-decoration: none;
+  list-style: none;
 }
+input:focus {
+  outline: none;
+}
+
+select:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+button{
+  width: 100px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 5px;
+  border: 1px solid var(--theam-color);
+  border-radius: 30px;
+  background-color: transparent;
+}
+
 @import "main";
 
 @media (min-width:1500px) {
