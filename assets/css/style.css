@@ -99,9 +99,6 @@ button {
 
 /* ============== navbar End ============ */
 /* =============== banner section start =============== */
-.Loan-banner-section {
-  max-height: 100vh;
-}
 .Loan-banner-section .banner-img-section .swiper {
   width: 100%;
   height: 100%;
@@ -111,28 +108,12 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  min-height: 90vh;
 }
 .Loan-banner-section .banner-img-section .swiper-slide .img-box-1 {
-  background-image: url(../img/slider-1.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
+  position: absolute;
+  left: 100px;
 }
-.Loan-banner-section .banner-img-section .swiper-slide .img-box-2 {
-  background-image: url(../img/img-2.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-}
-.Loan-banner-section .banner-img-section .swiper-slide .contain-body {
-  padding: 9rem 20px;
-}
-
 /* =============== banner section End =============== */
 /* ============ why-choose-section start ============= */
 .why-choose-section {
@@ -216,6 +197,40 @@ button {
 }
 
 /* =========== loan-counter-section End =============== */
+/* ================ loan application start ============ */
+.Loan-application-setion .loan-application-body {
+  box-shadow: 0 8px 30px -7px #c9dff0;
+  padding: 5rem;
+  margin: 20px 0;
+  width: min(100% - 20px, 90%);
+  margin-inline: auto;
+}
+.Loan-application-setion .loan-application-body .loan-application-head {
+  margin: 2rem 0;
+}
+.Loan-application-setion .loan-application-body .from-section .m-basics {
+  margin: 1rem 0;
+}
+.Loan-application-setion .loan-application-body .from-section select {
+  width: 100%;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  padding: 8px 5px;
+}
+.Loan-application-setion .loan-application-body .from-section textarea {
+  width: 100%;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  padding: 8px 5px;
+}
+.Loan-application-setion .loan-application-body .from-section input {
+  width: 100%;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  padding: 8px 5px;
+}
+
+/* ================ loan application End ============ */
 /* =========== footer setion start ============*/
 .footer-wrapper {
   padding: 30px 10px;

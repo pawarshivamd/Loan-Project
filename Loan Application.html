@@ -2,230 +2,166 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loan Application</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loan Application</title>
 
-    <!-- bootstrap link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <!-- bootstrap link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
-    <!-- font-awesome link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="assets/css/style.css">
+  <!-- font-awesome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 </head>
 
 <body>
-    <div class="container-fluid p-0">
+  <div class="container-fluid p-0">
 
 
-        <header id="navbar" class="container-fluid header-section p-0 navbar-scroll">
+    <header id="navbar" class="container-fluid header-section p-0 navbar-scroll">
 
-            <nav class="navbar navbar-expand-lg  ">
-              <div class="container">
-                <a class="navbar-brand" href="index.html"><img src="assets/img/logo.svg" alt=""></a>
-                <div class="navbar-toggler"  data-bs-toggle="collapse"
-                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                  aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-              </div>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0 menu-bar-section">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="about us.html">About us</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="services.html"> Services</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="Loan Application.html">Loan Application</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="contact us.html"> Contact us</a>
-                    </li>
-                    <li class="nav-item " data-bs-toggle="modal" data-bs-target="#loginModal" data-bs-whatever="@mdo">
-                      <a class="nav-link active" aria-current="page" href="#">Login</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </nav>
-          </header>
-        <div class="Loan-application-setion ">
-      
-              <div class="loan-application-body">
-                <div class="loan-application-head">
-                    <h2 class="">Loan Application</h2>
-                </div>
-                <div class="from-section">
-                    <form action="" method="post">
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6 col-sm-12">
-                                <label for="first-name">First Name:</label>
-                                <input type="text" id="first-name" name="first-name" required>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-12">
-                                <label for="last-name">Last Name:</label>
-    <input type="text" id="last-name" name="last-name" required>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-group">
-                                <label for="birthdate-month">Birth Date:</label>
-                                <select id="birthdate-month" name="birthdate-month" required="">
-                                  <option value="" disabled="" selected="">Month</option>
-                                  <option value="1">January</option>
-                                  <option value="2">February</option>
-                                  <option value="3">March</option>
-                                  <option value="4">April</option>
-                                  <option value="5">May</option>
-                                  <option value="6">June</option>
-                                  <option value="7">July</option>
-                                  <option value="8">August</option>
-                                  <option value="9">September</option>
-                                  <option value="10">October</option>
-                                  <option value="11">November</option>
-                                  <option value="12">December</option>
+      <nav class="navbar navbar-expand-lg  ">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><img src="assets/img/logo.svg" alt=""></a>
+          <div class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 menu-bar-section">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="about us.html">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="services.html"> Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Loan Application.html">Loan Application</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="contact us.html"> Contact us</a>
+              </li>
+              <li class="nav-item " data-bs-toggle="modal" data-bs-target="#loginModal" data-bs-whatever="@mdo">
+                <a class="nav-link active" aria-current="page" href="#">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="Loan-application-setion ">
 
-                                  <!-- Add the months as options -->
-                                </select>
-                                
-                                <select id="birthdate-day" name="birthdate-day" required="">
-                                    <option value="" disabled="" selected="">Day</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                    <option value="7">7</option>
-                                    <option value="8">8</option>
-                                    <option value="9">9</option>
-                                    <option value="10">10</option>
-                                    <option value="11">11</option>
-                                    <option value="12">12</option>
-                                    <option value="13">13</option>
-                                    <option value="14">14</option>
-                                    <option value="15">15</option>
-                                    <option value="16">16</option>
-                                    <option value="17">17</option>
-                                    <option value="18">18</option>
-                                    <option value="19">19</option>
-                                    <option value="20">20</option>
-                                    <option value="21">21</option>
-                                    <option value="22">22</option>
-                                    <option value="23">23</option>
-                                    <option value="24">24</option>
-                                    <option value="25">25</option>
-                                    <option value="26">26</option>
-                                    <option value="27">27</option>
-                                    <option value="28">28</option>
-                                    <option value="29">29</option>
-                                    <option value="30">30</option>
-                                    <option value="31">31</option>
-                                    
-                                  <!-- Add the days as options -->
-                                </select>
-                                
-                                <select id="birthdate-year" name="birthdate-year" required="">
-                                    <option value="" disabled="" selected="">Year</option>
-                                    <option value="1990">1990</option>
-                                    <option value="1991">1991</option>
-                                    <option value="1992">1992</option>
-                                    <option value="1993">1993</option>
-                                    <option value="1994">1994</option>
-                                    <option value="1995">1995</option>
-                                    <option value="1996">1996</option>
-                                    <option value="1997">1997</option>
-                                    <option value="1998">1998</option>
-                                    <option value="1999">1999</option>
-                                    <option value="2000">2000</option>
-                                    <option value="2001">2001</option>
-                                    <option value="2002">2002</option>
-                                    <option value="2003">2003</option>
-                                    <option value="2004">2004</option>
-                                    <option value="2005">2005</option>
-                                    <option value="2006">2006</option>
-                                    <option value="2007">2007</option>
-                                    <option value="2008">2008</option>
-                                    <option value="2009">2009</option>
-                                    <option value="2010">2010</option>
-                                    <option value="2011">2011</option>
-                                    <option value="2012">2012</option>
-                                    <option value="2013">2013</option>
-                                    <option value="2014">2014</option>
-                                    <option value="2015">2015</option>
-                                    <option value="2016">2016</option>
-                                    <option value="2017">2017</option>
-                                    <option value="2018">2018</option>
-                                    <option value="2019">2019</option>
-                                    <option value="2020">2020</option>
-                                    <option value="2021">2021</option>
-                                    <option value="2022">2022</option>
-                                    <option value="2023">2023</option>
-                                    
-                                  <!-- Add the years as options -->
-                                </select>
-                              </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6 col-sm-12">
-                                <label for="email">E-mail:</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-12">
-                                <label for="phone">Phone Number:</label>
-                                <input type="tel" id="phone" name="phone" required>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <label for="address">Address:</label>
-                            <textarea id="address" name="address" rows="4" required></textarea>
-                        </div>
-                    </form>
-                </div>
-              </div>
-              
+      <div class="loan-application-body">
+        <div class="loan-application-head">
+          <h2 class="text-center">Loan Application</h2>
         </div>
 
-        <footer>
-            <div class="footer-wrapper ">
-              <div class="footer-area footer-padding">
-                <div class="container">
-                  <div class="row justify-content-between">
-                    <div class=" col-lg-4 col-md-6 col-sm-8">
-                      <div class="single-footer-caption ">
-      
-                        <div class="footer-logo">
-                          <a href="index.html"><img src="assets/img/logo.svg" alt=""></a>
-                        </div>
-                        <p>Tools such as a profit simulator and tax calculator show the value of your stock options and
-                          exercise cost.</p>
-                      </div>
-                    </div>
-                    <div class="offset-lg-2 col-lg-2 col-md-4 col-sm-6">
-                      <div class="single-footer-caption">
-                        <div class="footer-tittle">
-                          <h4>Quick Links</h4>
-                          <ul>
-                            <li><a href="about us.html">About us
-                            </a></li>
-                            <li><a href="services.html">Services</a></li>
-                            <li><a href="Loan Application.html">Loan Application</a></li>
-                            <li><a href="contact us.html">Contact us</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6">
+        <form action="" method="post" class="from-section">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 m-basics">
+              <label for="first-name">First Name:</label>
+              <input type="text" id="first-name" name="first-name" required>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 m-basics">
+              <label for="last-name">Last Name:</label>
+              <input type="text" id="last-name" name="last-name" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 m-basics">
+              <label for="start">
+                Birthday Date:
+              </label>
+
+              <input type="date" name="begin" placeholder="dd-mm-yyyy" value="" min="1997-01-01" max="2030-12-31">
+            </div>
+            <div class=" col-lg-6 col-md-6 col-sm-12 m-basics">
+              <p>Choose your gender:</p>
+
+              <label for="male">Male</label>
+              <input type="radio" name="gender" id="male" value="male" class="w-25">
+
+
+              <label for="female">Female</label>
+              <input type="radio" name="gender" id="female" value="female" class="w-25">
+
+              <label for="other">Other</label>
+              <input type="radio" name="gender" id="other" value="other" class="w-25">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 m-basics">
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+
+
+            <div class="col-lg-6 col-md-6 col-sm-12 m-basics">
+              <label for="phone">Phone Number:</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 m-basics">
+            <label for="Loan-type">Loan Type:</label>
+
+            <select id="Loan-type">
+              <option value="Car finance">Car finance</option>
+              <option value="Business">Business</option>
+              <option value="Term loan">Term loan</option>
+
+            </select>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 m-basics">
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+          </div>
+        </form>
+
+      </div>
+
+    </div>
+
+    <footer>
+      <div class="footer-wrapper ">
+        <div class="footer-area footer-padding">
+          <div class="container">
+            <div class="row justify-content-between">
+              <div class=" col-lg-4 col-md-6 col-sm-8">
+                <div class="single-footer-caption ">
+
+                  <div class="footer-logo">
+                    <a href="index.html"><img src="assets/img/logo.svg" alt=""></a>
+                  </div>
+                  <p>Tools such as a profit simulator and tax calculator show the value of your stock options and
+                    exercise cost.</p>
+                </div>
+              </div>
+              <div class="offset-lg-2 col-lg-2 col-md-4 col-sm-6">
+                <div class="single-footer-caption">
+                  <div class="footer-tittle">
+                    <h4>Quick Links</h4>
+                    <ul>
+                      <li><a href="about us.html">About us
+                        </a></li>
+                      <li><a href="services.html">Services</a></li>
+                      <li><a href="Loan Application.html">Loan Application</a></li>
+                      <li><a href="contact us.html">Contact us</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6">
                       <div class="single-footer-caption mb-50">
                         <div class="footer-tittle">
                           <h4>Solution</h4>
@@ -237,49 +173,49 @@
                         </div>
                       </div>
                     </div> -->
-                    <div class=" col-lg-4 col-md-8 col-sm-10">
-                      <div class="single-footer-caption mb-50">
-                        <div class="footer-tittle mb-5">
-                          <h4>Newsletter</h4>
-                          <p>Subscribe newsletter to get updates.</p>
-                        </div>
-      
-                        <div class="footer-form mb-20">
-      
-                            <form action="" method="get">
-                              <input type="email" name="" id="" placeholder="Enter Your Email" class="email-class">
-                              <div class="btn-section">
-                                <button>Subscribe</button>
-                              </div>
-                            </form>
-                        </div>
-      
-                        <div class="footer-social ">
-                          <a href="https://www.fb.com/sai4ull"><i class="fab fa-facebook"></i></a>
-                          <a href="#"><i class="fab fa-instagram"></i></a>
-                          <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                          <a href="#"><i class="fab fa-youtube"></i></a>
-                        </div>
+              <div class=" col-lg-4 col-md-8 col-sm-10">
+                <div class="single-footer-caption mb-50">
+                  <div class="footer-tittle mb-5">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe newsletter to get updates.</p>
+                  </div>
+
+                  <div class="footer-form mb-20">
+
+                    <form action="" method="get">
+                      <input type="email" name="" id="" placeholder="Enter Your Email" class="email-class">
+                      <div class="btn-section">
+                        <button>Subscribe</button>
                       </div>
-                    </div>
+                    </form>
+                  </div>
+
+                  <div class="footer-social ">
+                    <a href="https://www.fb.com/sai4ull"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
                   </div>
                 </div>
               </div>
-      
-              
             </div>
-          </footer>
-</div>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-        <!-- bootstrap script -->
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
-            integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
-            crossorigin="anonymous"></script>
+          </div>
+        </div>
 
-        <script src="assets/js/script.js"></script>
+
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <!-- bootstrap script -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+    integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+    crossorigin="anonymous"></script>
+
+  <script src="assets/js/script.js"></script>
 
 
 </body>
