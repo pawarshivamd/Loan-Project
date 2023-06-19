@@ -12,13 +12,18 @@ window.addEventListener('scroll', function() {
   function redirectToLoanDashboard() {
     window.location.href = "https://loan-dashboard.netlify.app";
   }
+
+  function redirectTouplodDocument() {
+    window.location.href = "../../uplod document.html";
+  }
       var swiper = new Swiper(".mySwiper", {
         spaceBetween: 30,
+        loop: true,
         centeredSlides: true,
-        // autoplay: {
-        //   delay: 2500,
-        //   disableOnInteraction: false,
-        // },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
@@ -32,6 +37,11 @@ window.addEventListener('scroll', function() {
   
         spaceBetween: 30,
         freeMode: true,
+  
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
         pagination: {
           el: ".swiper-pagination",
           clickable: true,

@@ -97,6 +97,26 @@ button {
   box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.3);
 }
 
+.modal .modal-body input {
+  width: 100%;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  padding: 8px 5px;
+}
+.modal .login-btn {
+  color: white;
+  background-color: var(--theam-color);
+  box-shadow: 0 20px 20px rgba(26, 77, 190, 0.2);
+  margin-bottom: 20px;
+  width: 170px;
+  padding: 10px 30px !important;
+  transition: all 0.3s;
+}
+.modal .login-btn:hover {
+  background-color: transparent;
+  color: var(--black);
+}
+
 /* ============== navbar End ============ */
 /* =============== banner section start =============== */
 .Loan-banner-section .banner-img-section .swiper {
@@ -202,7 +222,7 @@ button {
   box-shadow: 0 8px 30px -7px #c9dff0;
   padding: 5rem;
   margin: 20px 0;
-  width: min(100% - 20px, 90%);
+  width: min(100% - 20px, 80%);
   margin-inline: auto;
 }
 .Loan-application-setion .loan-application-body .loan-application-head {
@@ -211,26 +231,185 @@ button {
 .Loan-application-setion .loan-application-body .from-section .m-basics {
   margin: 1rem 0;
 }
+.Loan-application-setion .loan-application-body .from-section label {
+  color: var(--light-theam-colo);
+  margin-bottom: 5px;
+}
+.Loan-application-setion .loan-application-body .from-section input::-webkit-outer-spin-button,
+.Loan-application-setion .loan-application-body .from-section input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 .Loan-application-setion .loan-application-body .from-section select {
   width: 100%;
   border: 1px solid lightgray;
   border-radius: 3px;
   padding: 8px 5px;
+  box-shadow: 0 7px 10px -7px #b4b2b2;
+}
+.Loan-application-setion .loan-application-body .from-section select:focus {
+  outline: 1px solid var(--theam-color);
 }
 .Loan-application-setion .loan-application-body .from-section textarea {
   width: 100%;
   border: 1px solid lightgray;
   border-radius: 3px;
   padding: 8px 5px;
+  box-shadow: 0 7px 10px -7px #b4b2b2;
+}
+.Loan-application-setion .loan-application-body .from-section textarea:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  outline: 1px solid var(--theam-color);
 }
 .Loan-application-setion .loan-application-body .from-section input {
   width: 100%;
   border: 1px solid lightgray;
   border-radius: 3px;
   padding: 8px 5px;
+  box-shadow: 0 7px 10px -7px #ddd9d9;
+}
+.Loan-application-setion .loan-application-body .from-section input:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  outline: 1px solid var(--theam-color);
+}
+.Loan-application-setion .loan-application-body .from-section .gender-input {
+  width: 10%;
+}
+.Loan-application-setion .loan-application-body .from-section .table-section {
+  width: 100%;
+}
+.Loan-application-setion .loan-application-body .from-section .table-section .table {
+  width: 100%;
+}
+.Loan-application-setion .loan-application-body .from-section .table-section .table thead tr th {
+  text-align: center;
+  padding: 10px 0;
+}
+.Loan-application-setion .loan-application-body .from-section .table-section .table tbody tr th {
+  text-align: start;
+  padding: 10px 0;
+  text-align: center;
+}
+.Loan-application-setion .loan-application-body .from-section .table-section .table tbody tr th input {
+  width: auto;
+}
+.Loan-application-setion .loan-application-body .from-section .table-section .table tbody tr td {
+  padding: 10px 0;
+  text-align: center;
+}
+.Loan-application-setion .loan-application-body .from-section .table-section .table .checkbox {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+.Loan-application-setion .loan-application-body .from-section .table-section .table .checkbox input[type=checkbox] {
+  position: absolute;
+  opacity: 0;
+}
+.Loan-application-setion .loan-application-body .from-section .table-section .table .checkbox-circle {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #aaa;
+  transition: all 0.3s;
+}
+.Loan-application-setion .loan-application-body .from-section .table-section .table .checkbox input[type=checkbox]:checked ~ .checkbox-circle {
+  background: #4CAF50;
+  border-color: #4CAF50;
+}
+.Loan-application-setion .loan-application-body .from-section .table-section .table .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: none;
+  stroke: #fff;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.Loan-application-setion .loan-application-body .from-section .table-section .table .checkbox input[type=checkbox]:checked ~ .checkbox-circle .checkmark {
+  opacity: 1;
+}
+.Loan-application-setion .loan-application-body .from-section .table-section .table .checkmark-circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  transition: stroke-dashoffset 0.3s;
+}
+.Loan-application-setion .loan-application-body .from-section .table-section .table .checkbox input[type=checkbox]:checked ~ .checkbox-circle .checkmark-circle {
+  stroke-dashoffset: 0;
+}
+.Loan-application-setion .loan-application-body .from-section .table-section .table .checkmark-kick {
+  stroke-dasharray: 50;
+  stroke-dashoffset: 50;
+  transition: stroke-dashoffset 0.3s;
+}
+.Loan-application-setion .loan-application-body .from-section .table-section .table .checkbox input[type=checkbox]:checked ~ .checkbox-circle .checkmark-kick {
+  stroke-dashoffset: 0;
+}
+.Loan-application-setion .loan-application-body .from-section .btn-section {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+.Loan-application-setion .loan-application-body .from-section .btn-section button {
+  color: white;
+  background-color: var(--theam-color);
+  box-shadow: 0 20px 20px rgba(26, 77, 190, 0.2);
+  margin-bottom: 20px;
+  width: 170px;
+  padding: 10px 30px !important;
+  transition: all 0.3s;
+}
+.Loan-application-setion .loan-application-body .from-section .btn-section button:hover {
+  background-color: transparent;
+  color: var(--black);
 }
 
 /* ================ loan application End ============ */
+/* =========== Loan document start ================= */
+.Loan-Documnent-setion .loan-Documnent-body .loan-Documnent-head {
+  margin: 50px 0;
+}
+.Loan-Documnent-setion .loan-Documnent-body .card {
+  border: none;
+  box-shadow: 0 12px 24px rgba(47, 65, 129, 0.1);
+  border-radius: 20px;
+  height: 260px;
+  background-color: #ffffff;
+  padding: 10px 30px 40px;
+  margin-bottom: 20px;
+  transition: all 0.1s ease-in-out;
+}
+.Loan-Documnent-setion .loan-Documnent-body .card:hover {
+  border: 1px solid var(--theam-color);
+}
+.Loan-Documnent-setion .loan-Documnent-body .card:hover .drop_box {
+  border: 1px dashed var(--theam-color);
+}
+.Loan-Documnent-setion .loan-Documnent-body .card h3 {
+  font-size: 22px;
+  font-weight: 600;
+}
+.Loan-Documnent-setion .loan-Documnent-body .card .drop_box {
+  margin: 10px 0;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px dashed rgba(0, 0, 0, 0.21);
+  border-radius: 5px;
+  height: 100%;
+}
+.Loan-Documnent-setion .loan-Documnent-body .card .drop_box:hover {
+  border: 1px dashed var(--theam-color);
+}
+
+/* =========== Loan document End ================= */
 /* =========== footer setion start ============*/
 .footer-wrapper {
   padding: 30px 10px;
