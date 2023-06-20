@@ -11,18 +11,32 @@ body {
   font-family: "Jost", sans-serif;
 }
 
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background: #00003e;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #5732c6;
+}
+
 html {
   font-size: 90.6%;
 }
 
 :root {
-  --theam-color:#1a4dbe;
+  --theam-color:#1A4DBE;
   --light-theam-color:#2c3655;
   --secondary-color:#055c2d;
   --white:#ffffff;
   --black:#000000;
   --dark-white:#dbdbdb;
   --light-blue: #b0baf1;
+  --light-gray:rgb(211, 211, 211) ;
 }
 
 img {
@@ -76,7 +90,7 @@ button {
 }
 .header-section .navbar {
   box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
-  padding: 20px 15px;
+  padding: 10px 0;
   background-color: var(--white);
 }
 .header-section .navbar .navbar-brand {
@@ -275,6 +289,10 @@ button {
 .Loan-application-setion .loan-application-body .from-section .gender-input {
   width: 10%;
 }
+.Loan-application-setion .loan-application-body .from-section .gender-input:focus {
+  box-shadow: none;
+  outline: none;
+}
 .Loan-application-setion .loan-application-body .from-section .table-section {
   width: 100%;
 }
@@ -313,11 +331,11 @@ button {
   height: 20px;
   border-radius: 50%;
   border: 2px solid #aaa;
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 .Loan-application-setion .loan-application-body .from-section .table-section .table .checkbox input[type=checkbox]:checked ~ .checkbox-circle {
-  background: #4CAF50;
-  border-color: #4CAF50;
+  background: var(--secondary-color);
+  border-color: var(--secondary-color);
 }
 .Loan-application-setion .loan-application-body .from-section .table-section .table .checkmark {
   position: absolute;
@@ -374,39 +392,55 @@ button {
 .Loan-Documnent-setion .loan-Documnent-body .loan-Documnent-head {
   margin: 50px 0;
 }
-.Loan-Documnent-setion .loan-Documnent-body .card {
-  border: none;
-  box-shadow: 0 12px 24px rgba(47, 65, 129, 0.1);
-  border-radius: 20px;
-  height: 260px;
-  background-color: #ffffff;
-  padding: 10px 30px 40px;
-  margin-bottom: 20px;
-  transition: all 0.1s ease-in-out;
+.Loan-Documnent-setion .loan-Documnent-body h4 {
+  margin-left: 15px;
+  font-size: 1.3rem;
 }
-.Loan-Documnent-setion .loan-Documnent-body .card:hover {
+.Loan-Documnent-setion .loan-Documnent-body .input-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--light-gray);
+  border-radius: 50px;
+  background-color: white;
+  box-shadow: 0 12px 24px rgba(47, 65, 129, 0.1);
+}
+.Loan-Documnent-setion .loan-Documnent-body .input-box:hover {
   border: 1px solid var(--theam-color);
 }
-.Loan-Documnent-setion .loan-Documnent-body .card:hover .drop_box {
-  border: 1px dashed var(--theam-color);
+.Loan-Documnent-setion .loan-Documnent-body .input-box i {
+  margin-right: 20px;
 }
-.Loan-Documnent-setion .loan-Documnent-body .card h3 {
-  font-size: 22px;
-  font-weight: 600;
+.Loan-Documnent-setion .loan-Documnent-body .upload-box {
+  font-size: 14px;
+  outline: none;
 }
-.Loan-Documnent-setion .loan-Documnent-body .card .drop_box {
-  margin: 10px 0;
-  padding: 30px;
+.Loan-Documnent-setion .loan-Documnent-body .upload-box::-webkit-file-upload-button {
+  padding: 10px;
+  color: white;
+  background-color: var(--theam-color);
+  border-radius: 50px;
+  width: 120px;
+  outline: none !important;
+  border: none !important;
+}
+.Loan-Documnent-setion .loan-Documnent-body .btn-section {
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-direction: column;
-  border: 1px dashed rgba(0, 0, 0, 0.21);
-  border-radius: 5px;
-  height: 100%;
+  margin: 10px 0;
 }
-.Loan-Documnent-setion .loan-Documnent-body .card .drop_box:hover {
-  border: 1px dashed var(--theam-color);
+.Loan-Documnent-setion .loan-Documnent-body .btn-section button {
+  color: white;
+  background-color: var(--theam-color);
+  box-shadow: 0 20px 20px rgba(26, 77, 190, 0.2);
+  margin-bottom: 20px;
+  width: 170px;
+  padding: 10px 30px !important;
+  transition: all 0.3s;
+}
+.Loan-Documnent-setion .loan-Documnent-body .btn-section button:hover {
+  background-color: transparent;
+  color: var(--black);
 }
 
 /* =========== Loan document End ================= */

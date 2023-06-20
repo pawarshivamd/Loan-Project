@@ -13,18 +13,32 @@ body {
   font-family: "Jost", sans-serif;
   // background-color: #eee;
 }
+body::-webkit-scrollbar {
+  width: .5em;
+
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background: #00003e;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #5732c6;
+}
 
 html {
   font-size: 90.6%;
 }
 :root{
-  --theam-color:#1a4dbe;
+  --theam-color:#1A4DBE;
   --light-theam-color:#2c3655;
   --secondary-color:#055c2d;
   --white:#ffffff;
   --black:#000000;
   --dark-white:#dbdbdb;
  --light-blue: #b0baf1;
+  --light-gray:rgb(211, 211, 211) ;
+
 }
 img{
   width: 100%;
